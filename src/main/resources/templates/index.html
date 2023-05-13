@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Bienvenido</title>
+</head>
+<body>
+<h1>Bienvenido</h1>
+
+<h2>Usuario logueado: <span sec:authentication="principal.username"></span></h2>
+
+<a href="/logout">Cerrar sesión</a>
+</body>
+</html>
