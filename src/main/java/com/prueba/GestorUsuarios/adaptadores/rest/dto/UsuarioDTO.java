@@ -1,4 +1,4 @@
-package com.prueba.GestorUsuarios.rest.dto;
+package com.prueba.GestorUsuarios.adaptadores.rest.dto;
 
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
@@ -11,6 +11,13 @@ public class UsuarioDTO  {
     private String apellido;
     private String email;
     private String password;
+
+    public UsuarioDTO(Long id, String nombre, String apellido, String email) {
+        this.id = id;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.email = email;
+    }
 
     public Long getId() {
         return id;

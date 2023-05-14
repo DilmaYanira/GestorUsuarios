@@ -1,7 +1,7 @@
 package com.prueba.GestorUsuarios.servicios;
 
 import com.prueba.GestorUsuarios.infraestructura.ClienteExterno;
-import com.prueba.GestorUsuarios.rest.dto.ClienteDTO;
+import com.prueba.GestorUsuarios.adaptadores.rest.dto.ClienteDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

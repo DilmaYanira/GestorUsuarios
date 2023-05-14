@@ -1,8 +1,9 @@
-package com.prueba.GestorUsuarios.rest;
+package com.prueba.GestorUsuarios.adaptadores;
 
 import com.prueba.GestorUsuarios.servicios.UsuarioServicio;
 import com.prueba.GestorUsuarios.servicios.UsuarioServicioIn;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,7 +22,10 @@ public class LoginControl {
     }
 
     @GetMapping("/inicio")
-    public String verPaginaDeInicio( ) {
-       return "index";
+    public String verPaginaDeInicio(Authentication authentication, Model modelo ) {
+        String username = authentication.getName();
+        modelo.addAttribute("usuario", usuarioServicio.consultarUsuario(username));
+        return "index";
+
     }
 }

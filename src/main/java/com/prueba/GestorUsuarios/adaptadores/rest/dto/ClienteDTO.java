@@ -1,4 +1,4 @@
-package com.prueba.GestorUsuarios.rest.dto;
+package com.prueba.GestorUsuarios.adaptadores.rest.dto;
 
 public class ClienteDTO {
     private Integer idCliente;

@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Bienvenido</title>
+    <title>Inicio</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
 </head>
 <body>
-<h1>Bienvenido</h1>
+<div class="container">
+    <h1>Bienvenido</h1>
 
-<h2>Usuario logueado: <span sec:authentication="principal.username"></span></h2>
-
+    <h2>Usuario logueado: <span th:text="${usuario.email}"></span></h2>
+    <h3>Nombre: <span th:text="${usuario.nombre}"></span></h3>
+    <h3>Nombre: <span th:text="${usuario.apellido}"></span></h3>
+    <h3>Email: <span th:text="${usuario.email}"></span></h3>
+</div>
 <a href="/logout">Cerrar sesión</a>
 </body>
+</html>
 </html>

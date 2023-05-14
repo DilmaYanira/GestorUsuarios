@@ -1,15 +1,15 @@
-package com.prueba.GestorUsuarios.rest;
+package com.prueba.GestorUsuarios.adaptadores.rest;
 
-import com.prueba.GestorUsuarios.rest.dto.ClienteDTO;
+import com.prueba.GestorUsuarios.adaptadores.rest.dto.ClienteDTO;
 import com.prueba.GestorUsuarios.servicios.ClienteServicioIn;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
-
 @RestController
+@RequestMapping("api/cliente")
 public class ClienteControler {
 
     @Autowired

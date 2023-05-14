@@ -18,6 +18,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf:2.5.0'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign:2.2.10.RELEASE'
+	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity3:3.0.4.RELEASE'
 	//implementation 'org.springframework.security:spring-security-crypto'
 	//implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
 	runtimeOnly 'com.microsoft.sqlserver:mssql-jdbc'
